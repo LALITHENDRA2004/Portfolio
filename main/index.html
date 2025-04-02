@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lalitendra Nichenakolla - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "T-r9gpkXSx1tp9dDe",
+            });
+        })();
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-content">
+            <span class="logo">Portfolio</span>
+            <button id="themeToggle" class="theme-toggle">
+                <span id="themeIcon"><i data-lucide="sun"></i></span>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#achievements">Achievements</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="mobile-menu" id="mobileMenu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Hi, I'm <span class="accent glowing-name">Lalitendra Nichenakolla</span></h1>
+            <p class="subtitle">I am a passionate student with strong programming skills and a solid foundation in web development.</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn primary">Get in Touch</a>
+                <a href="#projects" class="btn secondary">View Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/myimg1.jpg" alt="My Image">
+                </div>
+                <div class="about-text">
+                    <p>
+                        Hi, I'm Lalitendra — a passionate Programmer and Web Developer. As a student, I've developed a strong foundation in C++, Problem Solving, and Web Development. My journey into programming started with my love for mathematics and problem-solving, which inspired me to explore the world of coding.
+                        <br><br>
+                        One of my key projects includes a Weather App that reflects my ability to build functional and user-friendly applications. I enjoy tackling complex challenges and continuously improving my skills through hands-on experience and learning.
+                        <br><br>
+                        I love exploring new technologies to stay updated with the latest trends in the tech industry. My goal is to expand my knowledge and secure a rewarding position where I can apply my skills to make a meaningful impact.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://github.com/LALITHENDRA2004" target="_blank" rel="noopener noreferrer">
+                            <i data-lucide="github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/lalithendranichenakolla/" target="_blank" rel="noopener noreferrer">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">C++</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-percentage="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-percentage="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Java</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-percentage="80"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Web Technologies</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">HTML</span>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-percentage="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">CSS</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-percentage="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-percentage="80"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80" alt="Periodic Table">
+                    </div>
+                    <h3>Periodic Table</h3>
+                    <p>Interactive periodic table with detailed element information.</p>
+                    <a href="https://github.com/LALITHENDRA2004/PeriodicTable" class="project-link">
+                        View Code <i data-lucide="external-link"></i>
+                    </a>
+                    <a href="https://periodicccc-table.netlify.app/" class="project-link">
+                        Live Demo <i data-lucide="external-link"></i>
+                    </a>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=800&q=80" alt="To Do List">
+                    </div>
+                    <h3>To Do List</h3>
+                    <p>A feature-rich task management application.</p>
+                    <a href="https://github.com/LALITHENDRA2004/WebDevelopmentProject" class="project-link">
+                        View Code <i data-lucide="external-link"></i>
+                    </a>
+                    <a href="https://to-dolist-apppp.netlify.app/" class="project-link">
+                        Live Demo <i data-lucide="external-link"></i>
+                    </a>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&w=800&q=80" alt="Weather App">
+                    </div>
+                    <h3>Weather App</h3>
+                    <p>Real-time weather information application.</p>
+                    <a href="https://github.com/LALITHENDRA2004/WeatherApp" class="project-link">
+                        View Code <i data-lucide="external-link"></i>
+                    </a>
+                    <a href="https://weatherrr-apppp.netlify.app/" class="project-link">
+                        Live Demo <i data-lucide="external-link"></i>
+                    </a>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/porfolio.png" alt="Weather App">
+                    </div>
+                    <h3>Portfolio</h3>
+                    <p>A website to show case my skills, projects, achievements and to describe about myself.</p>
+                    <a href="#home" class="project-link">
+                        View Code <i data-lucide="external-link"></i>
+                    </a>
+                    <a href="#home" class="project-link">
+                        Live Demo <i data-lucide="external-link"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2>Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <img src="images/html.png" alt="HTML and CSS Certification">
+                    </div>
+                    <h3>HTML and CSS</h3>
+                    <p>Pearson IT Specialist</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <img src="images/python.png" alt="Python Certification">
+                    </div>
+                    <h3>Python</h3>
+                    <p>Pearson IT Specialist</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <img src="images/java.png" alt="Java Certification">
+                    </div>
+                    <h3>Java</h3>
+                    <p>Pearson IT Specialist</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <img src="images/cpp.png" alt="C++ Certification">
+                    </div>
+                    <h3>Advanced Programming in C++</h3>
+                    <p>Cisco</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Certificate Images -->
+    <div class="modal" id="imageModal">
+        <button class="modal-close" id="modalClose">
+            <i data-lucide="x"></i>
+        </button>
+        <img id="modalImage" src="" alt="Certificate">
+    </div>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2>Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-image">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <h3>Typing Test Winner</h3>
+                    <p>Awarded a keyboard and mouse for outstanding performance in a typing test conducted by Technical Hub during 2nd year of B-Tech.</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-image">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <h3>5-Star Badges</h3>
+                    <p>Earned 5-star badges in C++, Python, SQL, Problem Solving, and 30 Days of Code.</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-image">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <h3>Programming Excellence</h3>
+                    <p>Tackled nearly 500 challenges across diverse coding platforms, sharpening analytical skills and algorithmic expertise.</p>
+                </div>
+                <div class="achievement-card">
+                    <h3>Coding Profiles</h3>
+                    <div class="coding-profiles">
+                        <div class="profile-links">
+                            <a href="https://www.hackerrank.com/profile/22P31A0525" target="_blank" class="profile-link">
+                                <i data-lucide="code"></i>
+                                HackerRank
+                            </a>
+                            <a href="https://leetcode.com/u/Lalithendra/" target="_blank" class="profile-link">
+                                <i data-lucide="code-2"></i>
+                                LeetCode
+                            </a>
+                            <a href="https://www.codechef.com/users/lalithendra25" target="_blank" class="profile-link">
+                                <i data-lucide="terminal"></i>
+                                CodeChef
+                            </a>
+                            <a href="https://www.geeksforgeeks.org/user/lalithena6i9/" target="_blank" class="profile-link">
+                                <i data-lucide="code-square"></i>
+                                GFG
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-content">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <input id="name" type="text" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input id="email" type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+                <div class="contact-links">
+                    <a href="mailto:laithendra2810@gmail.com">
+                        <i data-lucide="mail"></i>
+                    </a>
+                    <a href="https://github.com/LALITHENDRA2004" target="_blank" rel="noopener noreferrer">
+                        <i data-lucide="github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/lalithendranichenakolla/" target="_blank" rel="noopener noreferrer">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <h3><i data-lucide="phone"></i> +91-9059687193</h3>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
