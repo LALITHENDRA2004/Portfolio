@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import Section from './Section';
-import { Code2, Globe, Database, Terminal } from 'lucide-react';
+import { Code2, Layout, Server, Database, Wrench, BrainCircuit } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 
 const Skills = () => {
@@ -8,18 +8,33 @@ const Skills = () => {
     const skillCategories = [
         {
             title: "Programming Languages",
-            icon: <Terminal className="text-indigo-500" size={24} />,
-            skills: ["C++", "Java", "Python", "C", "SQL"],
+            icon: <Code2 className="text-indigo-500" size={24} />,
+            skills: ["Java", "C++", "Python", "C"],
         },
         {
-            title: "Web Technologies",
-            icon: <Globe className="text-purple-500" size={24} />,
-            skills: ["HTML", "CSS", "JavaScript", "Bootstrap", "React", "React Tailwind"],
+            title: "Frontend Technologies",
+            icon: <Layout className="text-pink-500" size={24} />,
+            skills: ["HTML", "CSS", "JavaScript", "Bootstrap"],
         },
         {
-            title: "Backend & Tools",
-            icon: <Database className="text-pink-500" size={24} />,
-            skills: ["Spring Boot", "MySQL", "Postman", "Git", "GitHub"],
+            title: "Libraries & Frameworks",
+            icon: <Server className="text-purple-500" size={24} />,
+            skills: ["Spring Boot", "Spring Data JPA", "Hibernate", "Numpy", "Pandas"],
+        },
+        {
+            title: "Databases",
+            icon: <Database className="text-emerald-500" size={24} />,
+            skills: ["MySQL", "MongoDB"],
+        },
+        {
+            title: "Tools & Platforms",
+            icon: <Wrench className="text-amber-500" size={24} />,
+            skills: ["Git", "GitHub", "Docker", "Postman", "VS Code", "Eclipse"],
+        },
+        {
+            title: "Core CS Concepts",
+            icon: <BrainCircuit className="text-cyan-500" size={24} />,
+            skills: ["DSA", "OOP", "Computer Networks", "OS"],
         },
     ];
 

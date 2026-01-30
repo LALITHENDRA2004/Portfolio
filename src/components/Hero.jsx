@@ -1,13 +1,22 @@
 import { motion } from 'framer-motion';
+import React, { Suspense, lazy } from 'react';
 import Section from './Section';
 import { useTheme } from '../context/ThemeContext';
+
+// Lazy load the 3D scene for performance
+const HeroScene = lazy(() => import('./Three/HeroScene'));
 
 const Hero = () => {
     const { isDarkMode } = useTheme();
 
     return (
-        <Section id="home" className="min-h-screen flex items-center justify-center pt-20">
-            <div className="container mx-auto text-center">
+        <Section id="home" className="min-h-screen flex items-center justify-center pt-20 relative overflow-hidden">
+            {/* 3D Background Layer */}
+            <Suspense fallback={<div className="absolute inset-0 bg-transparent" />}>
+                <HeroScene isDarkMode={isDarkMode} />
+            </Suspense>
+
+            <div className="container mx-auto text-center relative z-10">
                 <motion.div
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
@@ -43,18 +52,18 @@ const Hero = () => {
                     transition={{ duration: 0.8, delay: 0.6 }}
                     className="flex flex-col sm:flex-row items-center justify-center gap-4"
                 >
-                    <a href="#contact" className="btn-primary w-full sm:w-auto text-center">
+                    <a href="#contact" className="btn-primary w-full sm:w-auto text-center transition-all duration-300 transform hover:scale-105 active:scale-95">
                         Get in Touch
                     </a>
-                    <a href="/src/assets/LalithendraResume.pdf" target="_blank" className="btn-secondary w-full sm:w-auto text-center">
+                    <a href="/src/assets/LalithendraResume.pdf" target="_blank" className="btn-secondary w-full sm:w-auto text-center transition-all duration-300 transform hover:scale-105 active:scale-95">
                         View Resume
                     </a>
                 </motion.div>
             </div>
 
-            {/* Decorative Blur Elements */}
-            <div className="absolute top-1/4 -left-20 w-72 h-72 bg-indigo-500/20 rounded-full blur-[120px] -z-10 animate-pulse" />
-            <div className="absolute bottom-1/4 -right-20 w-72 h-72 bg-purple-500/20 rounded-full blur-[120px] -z-10 animate-pulse" />
+            {/* Decorative Blur Elements - Softened to blend with 3D */}
+            <div className={`absolute top-1/4 -left-20 w-72 h-72 rounded-full blur-[120px] -z-10 animate-pulse transition-colors duration-1000 ${isDarkMode ? 'bg-indigo-500/10' : 'bg-indigo-300/10'}`} />
+            <div className={`absolute bottom-1/4 -right-20 w-72 h-72 rounded-full blur-[120px] -z-10 animate-pulse transition-colors duration-1000 ${isDarkMode ? 'bg-purple-500/10' : 'bg-purple-300/10'}`} />
         </Section>
     );
 };

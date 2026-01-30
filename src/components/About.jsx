@@ -39,27 +39,24 @@ const About = () => {
                         className="space-y-6"
                     >
                         <p className={`text-lg leading-relaxed ${isDarkMode ? 'text-slate-300' : 'text-slate-600'}`}>
-                            Hi, I'm Lalitendra — a passionate Programmer and Web Developer. My journey into programming started with my love for mathematics and problem-solving, which inspired me to explore the world of coding.
+                            Entry-level Software Engineer / Backend Developer with strong foundations in Data Structures, OOP, Java, Spring Boot, REST APIs, and MySQL.
                         </p>
                         <p className={`text-lg leading-relaxed ${isDarkMode ? 'text-slate-300' : 'text-slate-600'}`}>
-                            I've developed a strong foundation in C++, Problem Solving, and Web Development. I enjoy tackling complex challenges and continuously improving my skills through hands-on experience and learning.
-                        </p>
-                        <p className={`text-lg leading-relaxed font-medium ${isDarkMode ? 'text-white' : 'text-slate-900'}`}>
-                            My goal is to expand my knowledge and secure a rewarding position where I can apply my skills to make a meaningful impact.
+                            Experienced in building real-world full-stack applications using React and Git, with strong problem-solving ability demonstrated by solving 1000+ DSA problems across various coding platforms.
                         </p>
 
                         <div className="flex items-center gap-6 pt-4">
                             <a
                                 href="https://github.com/LALITHENDRA2004"
                                 target="_blank"
-                                className="p-3 glass hover:bg-indigo-600 hover:text-white transition-all rounded-xl"
+                                className={`p-3 glass hover:bg-indigo-600 hover:text-white transition-all rounded-xl ${isDarkMode ? 'text-white' : 'text-slate-900'}`}
                             >
                                 <Github size={24} />
                             </a>
                             <a
                                 href="https://www.linkedin.com/in/lalithendranichenakolla/"
                                 target="_blank"
-                                className="p-3 glass hover:bg-indigo-600 hover:text-white transition-all rounded-xl"
+                                className={`p-3 glass hover:bg-indigo-600 hover:text-white transition-all rounded-xl ${isDarkMode ? 'text-white' : 'text-slate-900'}`}
                             >
                                 <Linkedin size={24} />
                             </a>
