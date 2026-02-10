@@ -43,8 +43,7 @@ const Hero = () => {
                     transition={{ duration: 0.8, delay: 0.4 }}
                     className={`text-xl md:text-2xl max-w-2xl mx-auto mb-10 leading-relaxed ${isDarkMode ? 'text-slate-300' : 'text-slate-600'}`}
                 >
-                    I am a passionate software developer with strong programming skills and a solid foundation in backend development, currently exploring the cutting edge of frontend engineering.
-                </motion.p>
+                        I'm a backend-focused software developer who enjoys building real-world products and is eager to contribute in dynamic startup environments by taking ownership and growing with the team.                </motion.p>
 
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}

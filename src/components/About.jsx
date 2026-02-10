@@ -39,11 +39,9 @@ const About = () => {
                         className="space-y-6"
                     >
                         <p className={`text-lg leading-relaxed ${isDarkMode ? 'text-slate-300' : 'text-slate-600'}`}>
-                            Entry-level Software Engineer / Backend Developer with strong foundations in Data Structures, OOP, Java, Spring Boot, REST APIs, and MySQL.
-                        </p>
+                            I'm a backend-focused software developer who enjoys building real-world products and is eager to contribute in dynamic startup environments by taking ownership and growing with the team.                        </p>
                         <p className={`text-lg leading-relaxed ${isDarkMode ? 'text-slate-300' : 'text-slate-600'}`}>
-                            Experienced in building real-world full-stack applications using React and Git, with strong problem-solving ability demonstrated by solving 1000+ DSA problems across various coding platforms.
-                        </p>
+                            Hands-on experience developing real-world applications, focusing on backend logic, APIs, and data handling, with Git used for version control. Strong problem-solving ability demonstrated through solving 1000+ DSA problems.                        </p>
 
                         <div className="flex items-center gap-6 pt-4">
                             <a

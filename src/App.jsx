@@ -30,7 +30,7 @@ function AppContent() {
             📞 +91-9059687193
           </h3>
           <p className="text-slate-500 text-sm">
-            © {new Date().getFullYear()} Lalitendra Nichenakolla. Built with React & Tailwind.
+            © {new Date().getFullYear()} Lalitendra Nichenakolla.
           </p>
         </div>
       </footer>
